@@ -21,10 +21,23 @@
     overflow: hidden;
   }
 
+  .landing-page .footer {
+    margin: 32px 0px;
+    width: 1380px;
+    height: 70px;
+    background-color: var(--gray-2);
+    border-radius: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px 0;
+  }
 
 .div .hero_page {
     width: 1380px;
     overflow: hidden;
+    /* background-color: var(--cta); */
+    border-radius: 32px;
   }
 
 
@@ -241,10 +254,14 @@
   
   .landing-page .img {
     position: absolute;
-    width: 785px;
-    height: 667px;
+    /* width: 785px;
+    height: 667px; */
+    width: 920px;
+    height: auto;
     /* top: 0; */
-    left: 595px;
+    /* left: 595px; */
+    top: 50px;
+    left: 505px;
   }
   
   .landing-page .overlap-wrapper {
@@ -1018,6 +1035,14 @@
     top: 2893px;
     left: 30px;
   }
+
+  .landing-page .logo-2 {
+    position: absolute;
+    width: auto;
+    height: 60px;
+    top: 2200px;
+    left: 43px;
+  }
   
   .landing-page .rectangle-7 {
     width: 1380px;
@@ -1031,13 +1056,13 @@
     position: absolute;
     width: 606px;
     height: 557px;
-    top: 2080px;
+    top: 2120px;
     left: 779px;
   }
   
   .landing-page .text-wrapper-31 {
     position: absolute;
-    top: 2200px;
+    top: 2300px;
     left: 43px;
     font-family: "Poppins-SemiBold", Helvetica;
     font-weight: 600;
@@ -1053,7 +1078,7 @@
     position: absolute;
     width: 471px;
     height: 60px;
-    top: 2250px;
+    top: 2350px;
     left: 43px;
   }
   
