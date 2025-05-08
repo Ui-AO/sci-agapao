@@ -93,7 +93,7 @@
   
   .landing-page .logo {
     /* position: relative; */
-    width: 96px;
+    width: 128px;
     height: auto;
     /* top: 23px; */
     /* left: 40px; */
@@ -127,7 +127,8 @@
   .landing-page .bold-20 {
     font-family: var(--07-font-family);
     font-weight: var(--02-font-weight);
-    color: var(--text-heading-color);
+    /* color: var(--text-heading-color); */
+    color: #fff;
     font-size: 20px;
     letter-spacing: var(--07-letter-spacing);
     line-height: var(--07-line-height);
@@ -239,7 +240,10 @@
   .landing-page .overlap-group {
     /* position: absolute; */
     width: 1380px;
-    height: 667px;
+    /* height: 667px; */
+    height: 617px;
+    margin-bottom: 50px;
+    background-color: var(--cta);
     /* top: 156px; */
     /* left: 30px; */
   }
@@ -341,7 +345,7 @@
     left: 46px; */
     font-family: var(--07-font-family);
     font-weight: var(--07-font-weight);
-    color: #000000;
+    color: #fff;
     font-size: var(--07-font-size);
     letter-spacing: var(--07-letter-spacing);
     line-height: var(--07-line-height);
@@ -402,7 +406,7 @@
     left: 46px;
     font-family: var(--02-font-family);
     font-weight: var(--02-font-weight);
-    color: #000000;
+    color: #fff;
     font-size: var(--02-font-size);
     letter-spacing: var(--02-letter-spacing);
     line-height: var(--02-line-height);
@@ -445,7 +449,7 @@
     left: 46px;
     font-family: "Poppins-Regular", Helvetica;
     font-weight: 400;
-    color: #000000;
+    color: #fff;
     font-size: 16px;
     letter-spacing: 0;
     line-height: 24px;
