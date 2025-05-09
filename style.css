@@ -131,6 +131,54 @@
         width: 100% !important;
         font-size: 18px !important;
       }
+
+    .landing-page .logo-2 {
+        top: 3050px !important;
+        left: 40px !important;
+      }
+
+    .landing-page .text-wrapper-31 {
+        top: 3150px !important;
+        left: 40px !important;
+        font-size: 28px !important;
+      }
+      .landing-page .group-13 {
+        top: 3190px !important;
+        left: 40px !important;
+      }
+
+      .landing-page .overlap-3 {
+        /* position: absolute; */
+        width: 100% !important;
+        /* overflow: hidden; */
+        height: auto !important;
+        top: 2893px;
+        left: 30px;
+      }
+      .landing-page .text-wrapper-8 {
+        font-size: 14px !important;
+      }
+    
+      /* .landing-page .logo-2 {
+        position: absolute;
+        width: auto;
+        height: 60px;
+        top: 2250px;
+        left: 43px;
+      } */
+      
+      .landing-page .rectangle-7 {
+        width: 100% !important;
+        height: 700px !important;
+      }
+
+      .landing-page .element-rendering {
+        position: absolute;
+        width: 400px !important;
+        height: auto !important;
+        top: 3420px !important;
+        left: 20px !important;
+      }
 }
 
 
@@ -385,7 +433,7 @@
     /* top: 0; */
     /* left: 595px; */
     top: 230px;
-    left: 470px;
+    left: 520px;
   }
   
   .landing-page .overlap-wrapper {
@@ -1060,9 +1108,6 @@
   .landing-page .rectangle-7 {
     width: 1380px;
     height: 457px;
-    /* top: 56px; */
-    /* position: absolute; */
-    /* left: 0; */
   }
   
   .landing-page .element-rendering {
