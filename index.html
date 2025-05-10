@@ -12,15 +12,6 @@
     <title>SCI-AGAPAO</title>
     
   </head>
-  <!-- <script>
-      const hamburgerBtn = document.querySelector('.hamburger');
-      // const hamburgerBtnImg = document.querySelector('.hamburger img')
-      const opemHamburger = document.querySelector('.open-hamburger');
-
-      hamburgerBtn.onclick = function() {
-        opemHamburger.classList.toggle('active');
-      }
-    </script> -->
   
   <body>
     
@@ -43,6 +34,7 @@
               <img class="logo" src="Assets/logo.png" />
               <div class="navbar open">
                 <!-- <div class="text-wrapper-1">Accueil</div> -->
+                 <div class="text-wrapper-2"><a href="#" class="closeHam">Fermer</a></div>
                 <div class="text-wrapper-2"><a href="#apropos" class="apropos">A Propos</a></div>
                 <div class="text-wrapper-2"><a href="#services" class="services">Services</a></div>
                 <div class="text-wrapper-2"><a href="#galerie" class="galerie">Galerie</a></div>
@@ -270,32 +262,6 @@
               </div>
             </div>
 
-            <!-- <form action="#" method="post">
-              <div>
-                <label for="name">Nom :</label><br>
-                <input type="text" id="name" name="name" required>
-              </div>
-          
-              <div>
-                <label for="email">Email :</label><br>
-                <input type="email" id="email" name="email" required>
-              </div>
-              
-              <div>
-                <label for="message">Message :</label><br>
-                <textarea id="message" name="message" rows="5" required></textarea>
-              </div>
-              
-          
-              <button type="submit">Envoyer</button>
-            </form> -->
-            <!-- <div class="overlap-4">
-              <div class="rectangle-8"></div>
-              <div class="text-wrapper-8">Enter your email</div>
-              <div class="group-14">
-                <div class="div-wrapper"><div class="text-wrapper-9">Get a Quote</div></div>
-              </div>
-            </div> -->
           </div>
         </div>
 
@@ -305,18 +271,21 @@
               <p>© 2025 SCI AGAPAO, Tous droits réservés.</p>
             </div>
         </div>
-          </div>
-
-          
-        </div>  
+        </div>
+      </div>  
     </div>
   </body>
 
   <script>
         const menuHamburger = document.querySelector(".hamburger")
+        const menuClose = document.querySelector(".closeHam")
         const navLinks = document.querySelector(".navbar")
  
         menuHamburger.addEventListener('click',()=>{
+        navLinks.classList.toggle('open')
+        })
+
+        menuClose.addEventListener('click',()=>{
         navLinks.classList.toggle('open')
         })
   </script>
