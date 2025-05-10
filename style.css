@@ -22,10 +22,8 @@
         width: 64px !important;
       }
     .header .hamburger {
-        /* position: fixed; */
         display: block !important;
         width: 32px !important;
-        /* z-index: 9999; */
       }
    
     .header .navbar.open {

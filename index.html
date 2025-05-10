@@ -277,17 +277,37 @@
   </body>
 
   <script>
-        const menuHamburger = document.querySelector(".hamburger")
+        const menuOpen = document.querySelector(".hamburger")
         const menuClose = document.querySelector(".closeHam")
-        const navLinks = document.querySelector(".navbar")
- 
-        menuHamburger.addEventListener('click',()=>{
-        navLinks.classList.toggle('open')
+        const munuItems = document.querySelector(".navbar")
+
+        // open menu
+        menuOpen.addEventListener('click',()=>{
+        munuItems.classList.toggle('open')
+        })
+        // close menu
+        menuClose.addEventListener('click',()=>{
+        munuItems.classList.toggle('open')
         })
 
-        menuClose.addEventListener('click',()=>{
-        navLinks.classList.toggle('open')
+        // shorcuts toward navbar menus
+        const sectionAbout = document.querySelector(".apropos")
+        sectionAbout.addEventListener('click',()=>{
+        munuItems.classList.toggle('open')
         })
+        const sectionServices = document.querySelector(".services")
+        sectionServices.addEventListener('click',()=>{
+        munuItems.classList.toggle('open')
+        })
+        const sectionGallery = document.querySelector(".galerie")
+        sectionGallery.addEventListener('click',()=>{
+        munuItems.classList.toggle('open')
+        })
+        const sectionContact = document.querySelector(".us")
+        sectionContact.addEventListener('click',()=>{
+        munuItems.classList.toggle('open')
+        })
+ 
   </script>
 
 </html>
