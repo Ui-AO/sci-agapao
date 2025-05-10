@@ -2,29 +2,54 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="globals.css" />
     <link rel="stylesheet" href="styleguide.css" />
     <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" href="style.js" /> -->
+
     <title>SCI-AGAPAO</title>
     
   </head>
+  <!-- <script>
+      const hamburgerBtn = document.querySelector('.hamburger');
+      // const hamburgerBtnImg = document.querySelector('.hamburger img')
+      const opemHamburger = document.querySelector('.open-hamburger');
+
+      hamburgerBtn.onclick = function() {
+        opemHamburger.classList.toggle('active');
+      }
+    </script> -->
+  
   <body>
+    
     <div class="landing-page">
       <div class="div">
-
+        <!-- <div class="open-hamburger" >
+          <div class="close-btn">
+            <div class="close-icon"><img src="Assets/hamburger.svg"></div>
+          </div>
+          <div class="hamburger-menu open">
+            <hr><div class="list-menu"><a href="#apropos"><p>Propos</p></a></div><hr>
+            <div class="list-menu"><a href="#services"><P>Services</P></a></div><hr>
+            <div class="list-menu"><a href="#galerie"><P>Galerie</P></a></div><hr>
+            <div class="list-menu"><a href="#contacts"><P>Contactez-nous</P></a></div><hr>
+          </div>
+        </div> -->
         <!-- HEADER -->
          <div class="header">
             <div class="overlap">
               <img class="logo" src="Assets/logo.png" />
-              <div class="navbar">
+              <div class="navbar open">
                 <!-- <div class="text-wrapper-1">Accueil</div> -->
-                <div class="text-wrapper-2"><a href="#apropos">A Propos</a></div>
-                <div class="text-wrapper-3"><a href="#services">Services</a></div>
-                <div class="text-wrapper-4"><a href="#galerie">Galerie</a></div>
+                <div class="text-wrapper-2"><a href="#apropos" class="apropos">A Propos</a></div>
+                <div class="text-wrapper-2"><a href="#services" class="services">Services</a></div>
+                <div class="text-wrapper-2"><a href="#galerie" class="galerie">Galerie</a></div>
+                <div class="text-wrapper-2"><a href="#contacts" class="us">Contactez-nous</a></div>
               </div>
-              <div class="frame"><div class="text-wrapper-6"><a href="#contacts">Contactez-nous</a></div></div>
-              <img class="hamburger" src="Assets/hamburger.svg" />            </div>
+              <div><div class="text-wrapper-6"><a class="frame" href="#contacts">Contactez-nous</a></div></div>
+              <img src="Assets/hamburger.svg" class="hamburger"/>
          </div>
 
         <!-- HERO PAGE -->
@@ -35,7 +60,7 @@
 
               <div class="welcome">
                 <div class="text-wrapper-10">Bienenue chez</div>
-                <div class="bold-20">SCI-AGAPAO</div>
+                <div class="bold-20">SCI AGAPAO</div>
               </div>
 
               <div>
@@ -223,7 +248,7 @@
 
               <div class="contacts">
                 <img class="contact-icons" src="Assets/gps1.png" />
-                <p class="text-wrapper-8">PK15, Pret de la station Vision Energie 2e etage
+                <p class="text-wrapper-8">PK15, Près de la station Vision Energie 2e etage
                   <br>Douala, Cameroun
                 </p>
               </div>
@@ -277,4 +302,14 @@
       </div>
     </div>
   </body>
+
+  <script>
+        const menuHamburger = document.querySelector(".hamburger")
+        const navLinks = document.querySelector(".navbar")
+ 
+        menuHamburger.addEventListener('click',()=>{
+        navLinks.classList.toggle('open')
+        })
+  </script>
+  
 </html>
