@@ -67,13 +67,13 @@
               </p>
 
               <div class="motto">
-                <div class="motto-1">
+                <div class="bloc motto-1">
                   <span class="bold-16">• Intégrité</span> <br>
                 </div>
-                <div class="motto-2">
+                <div class="bloc motto-2">
                   <span class="bold-16">• Innovation</span> <br>
                 </div>
-                <div class="motto-3">
+                <div class="bloc motto-3">
                   <span class="bold-16">• Engagement</span> <br>
                 </div>
               </div>
@@ -318,20 +318,19 @@
         munuItems.classList.toggle('open')
         })
 
+        // window.addEventListener('DOMContentLoaded', () => {
+        //   const alreadyLoaded = localStorage.getItem('alreadyLoaded');
 
-        window.addEventListener('DOMContentLoaded', () => {
-          const alreadyLoaded = localStorage.getItem('alreadyLoaded');
-
-          if (alreadyLoaded) {
-            // Si ce n'est pas le premier chargement, on affiche le bloc
-            document.querySelectorAll('.navbar').forEach(el => {
-              el.style.display = ''; // ou `block` si besoin
-            });
-          } else {
-            // Marque que la page a été chargée une première fois
-            localStorage.setItem('alreadyLoaded', 'true');
-          }
-        })
+        //   if (alreadyLoaded) {
+        //     // Si ce n'est pas le premier chargement, on affiche le bloc
+        //     document.querySelectorAll('.navbar').forEach(el => {
+        //       el.style.display = ''; // ou `block` si besoin
+        //     });
+        //   } else {
+        //     // Marque que la page a été chargée une première fois
+        //     localStorage.setItem('alreadyLoaded', 'true');
+        //   }
+        // })
  
   </script>
 
