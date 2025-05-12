@@ -77,11 +77,16 @@
 
 
     .hero-page .overlap-group {
-        height: 720px !important;
+        height: 750px !important;
       }
+  .hero-page .rectangle {
+    width: 750px !important;
+    height: 750px !important;
+    transform: rotate(90deg);
+  }
     .hero-page .img {
         width: 430px !important;
-        top: 650px !important;
+        top: 690px !important;
         left: 10px !important;
       }
     .hero-page .welcome {
@@ -90,7 +95,7 @@
       }
     .hero-page .vector-1 {
         top: 124px !important;
-        left: 158px !important;
+        left: 165px !important;
         /* width: 150px;
         height: 128px; */
       }
@@ -98,7 +103,7 @@
         width: 320px !important;
         top: 250px !important;
         left: 40px !important;
-        font-size: 32px !important;;
+        font-size: 36px !important;;
       }
     .hero-page .p {
         width: 280px !important;
@@ -107,19 +112,19 @@
         font-size: 14px !important;
       }
     .hero-page .motto {
-        width: 300px !important;
+        width: 320px !important;
         top: 550px !important;
         left: 46px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        overflow:scroll
+        /* display: flex; */
+        justify-content: start !important;
+        /* align-items: center; */
+        flex-wrap: wrap;
       }
     
 
     .our_services .vect-2 {
-        top: 880px !important;
-        left: 140px !important;
+        top: 908px !important;
+        left: 120px !important;
     }
     .our_services .text-wrapper-12 {
         margin-top: 40px !important;
@@ -173,6 +178,12 @@
     .our_services .text-wrapper-16 {
         width: 100% !important;
         font-size: 18px !important;
+      }
+      .our_services .cards {
+        margin-bottom: 12px !important;
+      }
+    .marquee-container {
+      margin-bottom: 24px !important;
       }
 
     .landing-page .logo-2 {
@@ -247,9 +258,7 @@
         margin-right: 20px;
         /* padding-bottom: 50px !important; */
       } 
-      .marquee-container {
-      margin-bottom: 64px !important;
-      }
+
     .marquee {
       font-size: 24px !important;
       }
@@ -261,14 +270,14 @@
         border: #000000 solid 1px;
         overflow: hidden;
       }
-      .our_gallery .vector-3 {
+      /* .our_gallery .vector-3 {
         width: 220px;
         height: 128px;
-      }
+      } */
       .our_gallery .vect-3 {
         position: absolute;
-        top: 2120px !important;
-        left: 100px !important;
+        top: 2210px !important;
+        left: 88px !important;
       }
       .footer p {
         font-size: 12px;
@@ -356,13 +365,17 @@
     width: 100%;
     overflow: hidden;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
 
 .div .our_gallery {
     width: 100%;
     overflow: hidden;
-    margin-top: 50px;
+    margin: 50px auto;
   }
 
 
@@ -550,12 +563,9 @@
     /* left: 30px; */
   }
   
-  .landing-page .rectangle {
-    /* position: absolute; */
+  .hero-page .rectangle {
     width: 1380px;
     height: 617px;
-    /* top: 0; */
-    /* left: 0; */
   }
   
   .hero-page .img {
@@ -612,7 +622,7 @@
   .hero-page .vector-1 {
     position: absolute;
     top: 164px;
-    left: 165px;
+    left: 172px;
     width: 150px;
     height: 128px;
   }
@@ -628,7 +638,17 @@
     letter-spacing: var(--02-letter-spacing);
     line-height: var(--02-line-height);
     font-style: var(--02-font-style);
+    animation: slideRight-1 0.5s ease-out forwards;
   }
+  @keyframes slideRight-1 {
+      from {
+        transform: translateX(-100%);
+      }
+      to {
+        transform: translateX(0);
+      }
+  }
+
   .hero-page .p {
     position: absolute;
     width: 435px;
@@ -640,6 +660,15 @@
     font-size: 16px;
     letter-spacing: 0;
     line-height: 24px;
+    animation: slideRight-2 0.8s ease-out forwards;
+  }
+  @keyframes slideRight-2 {
+      from {
+        transform: translateX(-100%);
+      }
+      to {
+        transform: translateX(0);
+      }
   }
   .hero-page .motto {
     position: absolute;
@@ -653,21 +682,25 @@
   }
 
   .hero-page .motto-1 {
-    background-color: #fff;
+    background-color: #05DF72;
     padding: 12px 24px;
     border-radius: 8px;
+    border: #fff solid 1.5px;
+
   }
 
   .hero-page .motto-2 {
-    background-color: #fff;
+    background-color: #FF8904;
     padding: 12px 24px;
     border-radius: 8px;
+    border: #fff solid 1.5px;
   }
 
   .hero-page .motto-3 {
-    background-color: #fff;
+    background-color: #FF2056;
     padding: 12px 24px;
     border-radius: 8px;
+    border: #fff solid 1.5px;
   }
   
 
@@ -683,7 +716,7 @@
 
 .our_gallery .vect-3 {
     position: absolute;
-    top: 1490px;
+    top: 1556px;
     left: 580px;
 }
 
@@ -693,13 +726,14 @@
 }
 
 .marquee-container {
-  width: 100%;
+  width: 1320px;
   overflow: hidden;
   background-color: var(--gray-2);
   white-space: nowrap;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
+  border-radius: 12px;
   padding: 32px;
-  margin: 32px 0 64px;
+  /* margin: 32px 0 0; */
 }
 
 .marquee {
@@ -784,7 +818,9 @@
     line-height: var(--03-line-height);
     font-style: var(--03-font-style);
   }
-  
+  .our_services .cards {
+    margin: 48px auto;
+  }
   .our_services .group-2-1 {
     /* position: absolute; */
     display: flex;
@@ -794,7 +830,7 @@
     height: auto;
     /* top: 1021px; */
     /* left: 66px; */
-    margin: 56px auto;
+    margin: 0 auto 48px;
   }
 
   .our_services .group-2-2 {
@@ -806,8 +842,7 @@
     height: auto;
     /* top: 1021px; */
     /* left: 66px; */
-    margin: 56px auto;
-  }
+    }
 
   .our_services .group-3-1 {
     width: 400px;
@@ -1262,19 +1297,19 @@
   }
   
   .landing-page .overlap-3 {
-    /* position: absolute; */
     width: 1380px;
     overflow: hidden;
     height: 557px;
     top: 2893px;
     left: 30px;
+    margin: 72px auto 0;
   }
 
   .landing-page .logo-2 {
     position: absolute;
     width: auto;
     height: 60px;
-    top: 2300px;
+    top: 2260px;
     left: 43px;
   }
   
@@ -1287,13 +1322,13 @@
     position: absolute;
     width: 606px;
     height: 557px;
-    top: 2220px;
+    top: 2170px;
     left: 779px;
   }
   
   .landing-page .text-wrapper-31 {
     position: absolute;
-    top: 2410px;
+    top: 2360px;
     left: 43px;
     font-family: "Poppins-SemiBold", Helvetica;
     font-weight: 600;
@@ -1309,7 +1344,7 @@
     position: absolute;
     width: 471px;
     height: 60px;
-    top: 2460px;
+    top: 2400px;
     left: 43px;
   }
   
