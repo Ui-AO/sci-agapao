@@ -32,7 +32,7 @@
          <div class="header" id="header">
             <div class="overlap" id="overlap">
               <img class="logo" src="Assets/logo.png" />
-              <div class="navbar open">
+              <div class="navbar">
                 <!-- <div class="text-wrapper-1">Accueil</div> -->
                  <div><a href="#header"><img src="Assets/close1.svg" class="closeHam"></a></div>
                 <div class="text-wrapper-2"><a href="#apropos" class="apropos">A Propos</a></div>
@@ -287,16 +287,16 @@
   </body>
 
   <script>
-        const menuOpen = document.querySelector(".hamburger")
         const menuClose = document.querySelector(".closeHam")
+        const menuOpen = document.querySelector(".hamburger")
         const munuItems = document.querySelector(".navbar")
 
-        // open menu
-        menuOpen.addEventListener('click',()=>{
-        munuItems.classList.toggle('open')
-        })
         // close menu
         menuClose.addEventListener('click',()=>{
+        munuItems.classList.toggle('open')
+        })
+        // open menu
+        menuOpen.addEventListener('click',()=>{
         munuItems.classList.toggle('open')
         })
 
@@ -316,6 +316,21 @@
         const sectionContact = document.querySelector(".us")
         sectionContact.addEventListener('click',()=>{
         munuItems.classList.toggle('open')
+        })
+
+
+        window.addEventListener('DOMContentLoaded', () => {
+          const alreadyLoaded = localStorage.getItem('alreadyLoaded');
+
+          if (alreadyLoaded) {
+            // Si ce n'est pas le premier chargement, on affiche le bloc
+            document.querySelectorAll('.navbar').forEach(el => {
+              el.style.display = ''; // ou `block` si besoin
+            });
+          } else {
+            // Marque que la page a été chargée une première fois
+            localStorage.setItem('alreadyLoaded', 'true');
+          }
         })
  
   </script>

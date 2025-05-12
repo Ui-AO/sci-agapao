@@ -77,13 +77,13 @@
 
 
     .hero-page .overlap-group {
-        height: 750px !important;
-      }
-  .hero-page .rectangle {
-    width: 750px !important;
-    height: 750px !important;
-    transform: rotate(90deg);
-  }
+          height: 750px !important;
+        }
+    .hero-page .rectangle {
+      width: 750px !important;
+      height: 750px !important;
+      transform: rotate(90deg);
+    }
     .hero-page .img {
         width: 430px !important;
         top: 690px !important;
@@ -124,7 +124,7 @@
 
     .our_services .vect-2 {
         top: 908px !important;
-        left: 120px !important;
+        left: 125px !important;
     }
     .our_services .text-wrapper-12 {
         margin-top: 40px !important;
@@ -276,7 +276,7 @@
       } */
       .our_gallery .vect-3 {
         position: absolute;
-        top: 2210px !important;
+        top: 2215px !important;
         left: 88px !important;
       }
       .footer p {
@@ -287,7 +287,10 @@
 
 /* END MEDIA RESPONSIVE */
 
-
+/* .header .navbar.open {
+      right: 0px;
+      z-index: 9998;
+      } */
 .landing-page {
     background-color: #fff;
     display: flex;
